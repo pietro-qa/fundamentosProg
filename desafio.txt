@@ -1,0 +1,32 @@
+1 --> a)%f conta em int.
+      b)5/9 conta com casas decimais < 0. Devido ao tipo ser int vai ficar 5/9 = 0 * x = 0, errado.
+      c)correto
+      d)sem parenteses para informar a "ordem" das contas.
+      e)%d conta em float.
+      f)correto 
+    
+2 --> falta & no primeiro scanf (linha 7)
+    matricula maiusculo no scanf sendo que foi instanciada minusula(linha 9)
+    %d e %f invertidos (linha 8)
+    falta import da bilbioteca padrão (<stdio.h>)
+
+3 --> a) 
+#include<stdio.h>
+
+int main ()
+{
+    printf("Valor de n = %d", 2*2*2);
+}
+
+b)
+#include<stdio.h>
+
+int main ()
+{
+    int resultado;
+    int n;
+    printf("Digite um número:\n");
+    scanf("%d", &n);
+    resultado = n * n * n;
+    printf("Valor de n = %d", resultado);
+}
